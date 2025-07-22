@@ -191,11 +191,15 @@ body {
     margin-bottom: 20px;
 }
 
-
-.livelink {
-    font-size: 13px;
+.cardbuttons {
+    display: flex;
+    gap: 30px;
     position: absolute;
     bottom: 8px;
+}
+
+.cardbutton {
+    font-size: 13px;
     width: max-content;
     margin: auto;
     text-align: center;
@@ -204,11 +208,11 @@ body {
 
 }
 
-.livelink:hover {
+.cardbutton:hover {
     scale: 0.95;
 }
 
-.livelink a {
+.cardbutton a {
     display: block;
     border-radius: 9px;
     width: 70px;

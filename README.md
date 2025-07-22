@@ -1,4 +1,4 @@
-# 🧑‍💻 Personal Portfolio
+# 💻 Personal Portfolio
 
 This is a responsive and interactive personal portfolio website built using **React**. It showcases my projects, technologies, and a brief introduction to who I am as a developer.
 

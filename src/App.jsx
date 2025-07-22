@@ -20,7 +20,11 @@ const Card = (props) => {
       <div className="info">
         {props.text}
       </div>
-      <div className='livelink' style={{ backgroundColor: bgColor }}><a href={props.link} target="_blank" rel="noopener noreferrer">View </a></div>
+      <div className="cardbuttons">
+
+        <div className='cardbutton' style={{ backgroundColor: bgColor }}><a href={props.link} target="_blank" rel="noopener noreferrer">View Live </a></div>
+        <div className='cardbutton' style={{ backgroundColor: bgColor }}><a href={`https://www.github.com/GurbajSinghCodes/${props.github}`} target="_blank" rel="noopener noreferrer">Git Repo</a></div>
+      </div>
     </div>
   )
 }
@@ -99,6 +103,7 @@ const App = () => {
               heading={card.heading}
               text={card.text}
               link={card.link}
+              github={card.gitub}
             />
           ))}
         </div>
