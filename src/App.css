@@ -1,0 +1,292 @@
+:root {
+    --textcolor: #0c0910;
+    --bgcolor: #c5c7c2
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s ease;
+}
+
+body {
+    background-color: #0c0910;
+
+}
+
+.app {
+    max-width: 1430px;
+    min-height: 90vh;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.about {
+    z-index: 999;
+    height: 70px;
+    min-height: 15vh;
+    border-radius: 10px;
+    background: no-repeat url("bg.jpg") center center /cover;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    padding: 30px;
+    gap: 20px;
+    top: -20px;
+}
+
+.pp img {
+    border: 3px solid white;
+    border-radius: 50%;
+    height: 90px;
+    width: 90px;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.heading .name {
+    font-size: xx-large;
+    font-weight: 700;
+    color: white;
+}
+
+.heading .study {
+    font-size: medium;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+
+}
+
+.scroll-btn {
+    color: white;
+    padding: 5px;
+    background-color: var(--textcolor);
+    font-size: 15px;
+    border: none;
+}
+
+.technologies {
+    min-height: 15vh;
+    padding: 20px;
+    background-color: var(--bgcolor);
+    border-radius: 10px;
+}
+
+.division {
+    font-weight: bold;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    color: var(--textcolor);
+    text-decoration: underline;
+    font-size: 26px;
+}
+
+.technologies .images {
+    overflow: auto;
+    display: flex;
+    gap: 20px;
+}
+
+.technologies .images a:hover {
+    scale: 0.9;
+}
+
+.technologies .images a {
+    background-color: white;
+    border-radius: 5px;
+    height: 80px;
+    padding: 8px;
+    border: 2px solid white;
+}
+
+.technologies .images a:focus {
+    outline: none;
+    border-color: #333333;
+}
+
+.technologies .images img {
+    height: 100%;
+
+}
+
+.projects {
+    padding: 20px;
+    background-color: var(--bgcolor);
+    border-radius: 10px;
+}
+
+.projects .cards {
+    display: flex;
+    gap: 30px;
+    overflow: auto;
+
+}
+
+
+
+
+
+.card {
+    min-height: 50vh;
+    height: 250px;
+    margin: 10px;
+    width: min-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 16px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.6);
+    position: relative;
+}
+
+.card:hover {
+    scale: 1.01;
+}
+
+.card .image {
+    height: 50%;
+}
+
+.card .image img {
+    border-radius: 7px;
+    height: 100%;
+}
+
+
+.card .title {
+    padding: 5px 10px;
+    text-align: center;
+    color: #333333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+    font-weight: bold;
+}
+
+.card .info {
+    padding: 0 10px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: auto;
+    margin-bottom: 20px;
+}
+
+
+.livelink {
+    font-size: 13px;
+    position: absolute;
+    bottom: 8px;
+    width: max-content;
+    margin: auto;
+    text-align: center;
+    border-radius: 9px;
+
+
+}
+
+.livelink:hover {
+    scale: 0.95;
+}
+
+.livelink a {
+    display: block;
+    border-radius: 9px;
+    width: 70px;
+    padding: 5px;
+    text-decoration: none;
+    border: 1px solid transparent;
+    color: white;
+}
+
+.contact {
+    background: url("bg.jpg") center center/cover;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.contacts {
+    display: flex;
+    padding: 0 20px;
+    gap: 5px;
+    flex-direction: column;
+}
+
+.contacts a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.contacts a:hover {
+    transform: translateY(-2px);
+}
+
+@media (max-width:768px) {
+
+    .heading .name {
+        font-size: x-large;
+    }
+
+    .heading .study {
+        font-size: small;
+    }
+
+    .division {
+        font-size: small;
+    }
+
+    .technologies .buttons {
+        display: none;
+    }
+
+    .technologies .images {
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+
+    .technologies .images a {
+        height: 35px;
+    }
+
+    .projects {
+        padding: 0px;
+    }
+
+    .projectsheader {
+        padding: 20px 20px 0;
+    }
+
+    .card {
+        margin-left: 15px;
+    }
+
+    .scroll-btn {
+        font-size: 7px;
+        padding: 2px;
+    }
+}
