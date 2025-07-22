@@ -30,7 +30,7 @@ body {
     height: 70px;
     min-height: 15vh;
     border-radius: 10px;
-    background: no-repeat url("bg.jpg") center center /cover;
+    background: no-repeat url("/bg.jpg") center center /cover;
     display: flex;
     justify-content: baseline;
     align-items: center;
@@ -219,7 +219,7 @@ body {
 }
 
 .contact {
-    background: url("bg.jpg") center center/cover;
+    background: url("/bg.jpg") center center/cover;
     border-radius: 10px;
     padding: 20px;
 }
