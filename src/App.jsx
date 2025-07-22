@@ -1,5 +1,5 @@
 import { useRef } from 'react';
-import './app.css'
+import './App.css'
 import { projects } from './projects.js'
 import { Mail, Github, Linkedin, Instagram } from "lucide-react"
 const getRandomColor = () => {
