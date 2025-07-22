@@ -110,7 +110,7 @@ const App = () => {
           <div className="division">Contact Me</div>
         </div>
         <div className="contacts">
-          <a target='_blank' href="mailto:gurbajsingh098@gmail.com"> <Mail />gurbajsingh098@gmail.com</a>
+          <a target='_blank' href="mailto:gurbajsingh098@gmail.com"> <Mail />Mail</a>
           <a target='_blank' href="https://github.com/gurbajsinghcodes"><Github />Github</a>
           <a target='_blank' href="https://linkedin.com/in/gurbaj-singh-5a09482a6"><Linkedin />LinkedIn</a>
           <a target='_blank' href="https://instagram.com/gurbaj_khaira"><Instagram /> Instagram</a>
