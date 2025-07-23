@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import './App.css'
 import { projects } from './projects.js'
 import { Mail, Github, Linkedin, Instagram } from "lucide-react"
@@ -30,13 +30,23 @@ const Card = (props) => {
 }
 
 const App = () => {
+
   const scrollRef1 = useRef(null)
   const scrollRef2 = useRef(null)
+
   const scrollLeft = (element) => {
-    element.current.scrollBy({ left: -283, behavior: "smooth" })
+    const firstCard = document.querySelector('.card');
+    const scrollAmount = firstCard.offsetWidth + 55;
+
+
+    element.current.scrollBy({ left: -scrollAmount, behavior: "smooth" })
   }
   const scrollRight = (element) => {
-    element.current.scrollBy({ left: 283, behavior: "smooth" })
+    const firstCard = document.querySelector('.card');
+    const scrollAmount = firstCard.offsetWidth + 55;
+
+
+    element.current.scrollBy({ left: scrollAmount, behavior: "smooth" })
   }
   return (
     <div className="app">
@@ -115,10 +125,10 @@ const App = () => {
           <div className="division">Contact Me</div>
         </div>
         <div className="contacts">
-          <a target='_blank' href="mailto:gurbajsingh098@gmail.com"> <Mail />Mail</a>
-          <a target='_blank' href="https://github.com/gurbajsinghcodes"><Github />Github</a>
-          <a target='_blank' href="https://linkedin.com/in/gurbaj-singh-5a09482a6"><Linkedin />LinkedIn</a>
-          <a target='_blank' href="https://instagram.com/gurbaj_khaira"><Instagram /> Instagram</a>
+          <a target='_blank' href="mailto:gurbajsingh098@gmail.com"> <Mail className='lucide-icons' />Mail</a>
+          <a target='_blank' href="https://github.com/gurbajsinghcodes"><Github className='lucide-icons' />Github</a>
+          <a target='_blank' href="https://linkedin.com/in/gurbaj-singh-5a09482a6"><Linkedin className='lucide-icons' />LinkedIn</a>
+          <a target='_blank' href="https://instagram.com/gurbaj_khaira"><Instagram className='lucide-icons' /> Instagram</a>
 
         </div>
       </div>

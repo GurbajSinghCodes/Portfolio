@@ -86,10 +86,13 @@ body {
 }
 
 .technologies {
-    min-height: 15vh;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
     padding: 20px;
     background-color: var(--bgcolor);
     border-radius: 10px;
+    justify-content: space-evenly;
 }
 
 .division {
@@ -147,8 +150,7 @@ body {
 
 
 .card {
-    min-height: 50vh;
-    height: 250px;
+    height: 350px;
     margin: 10px;
     width: min-content;
     display: flex;
@@ -248,18 +250,9 @@ body {
     transform: translateY(-2px);
 }
 
-@media (max-width:768px) {
-
-    .heading .name {
-        font-size: x-large;
-    }
-
-    .heading .study {
-        font-size: small;
-    }
-
-    .division {
-        font-size: small;
+@media (orientation: portrait) {
+    .technologies {
+        height: unset;
     }
 
     .technologies .buttons {
@@ -272,13 +265,27 @@ body {
         justify-content: center;
     }
 
-
     .technologies .images a {
         height: 35px;
     }
 
+}
+
+@media (max-width:768px) {
+    .heading .name {
+        font-size: x-large;
+    }
+
+    .heading .study {
+        font-size: small;
+    }
+
+    .division {
+        font-size: large;
+    }
+
     .projects {
-        padding: 0px;
+        padding: 10px;
     }
 
     .projectsheader {
@@ -292,5 +299,38 @@ body {
     .scroll-btn {
         font-size: 7px;
         padding: 2px;
+    }
+
+    .contacts a {
+        font-size: 12px;
+    }
+
+    .contacts .lucide-icons {
+        height: 20px;
+    }
+}
+
+@media (max-width:400px) {
+    .pp img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .heading .name {
+        font-size: large;
+    }
+
+    .card {
+        width: 225px;
+        height: unset;
+    }
+
+    .card .image {
+        height: unset;
+    }
+
+    .card .image img {
+        width: 225px;
+        height: auto;
     }
 }
