@@ -16,15 +16,14 @@ export default function Hero() {
                     </Reveal>
 
                     <Reveal as="h1" className="hero__title" delay={80}>
-                        Gurbaj Singh.
+                        Gurbaj Singh
                         <br />
-                        <span className="hero__title-dim">
-                            I build things for the web.
-                        </span>
+                        <span className="hero__title-dim">Web Developer</span>
                     </Reveal>
 
                     <Reveal as="p" className="hero__sub" delay={160}>
-                        B.Tech CS student, full-stack developer, and lifelong tinkerer.
+                        Currently a web developer at <strong>Inphora Pvt. Ltd.</strong>, working across
+                        the full stack — React on the front, Node and Express on the back.
                         I like turning messy problems into clean, fast interfaces.
                     </Reveal>
 

@@ -27,7 +27,7 @@ const TECH = [
     { name: "Domain & DNS", src: "technologies/dns.png", href: "https://www.cloudflare.com/learning/dns/what-is-dns/" },
 
     // Tooling
-    { name: "VS Code", src: "technologies/vscode.png", href: "https://code.visualstudio.com/docs" },
+    { name: "VS Code", src: "technologies/vs.png", href: "https://code.visualstudio.com/docs" },
     { name: "Canva", src: "technologies/canva.jpg", href: "https://canva.com/" },
 ];
 
