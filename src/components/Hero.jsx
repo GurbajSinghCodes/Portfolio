@@ -22,9 +22,7 @@ export default function Hero() {
                     </Reveal>
 
                     <Reveal as="p" className="hero__sub" delay={160}>
-                        Currently a web developer at <strong>Inphora Pvt. Ltd.</strong>, working across
-                        the full stack — React on the front, Node and Express on the back.
-                        I like turning messy problems into clean, fast interfaces.
+                        Web developer at <strong>Inphora Pvt. Ltd.</strong>  I mostly work with React, Node, and Express, building and maintaining web applications.
                     </Reveal>
 
                     <Reveal as="div" className="hero__actions" delay={240}>
