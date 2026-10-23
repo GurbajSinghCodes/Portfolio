@@ -1,6 +1,16 @@
 // src/projects.js
 const projects = [
   {
+    id: 5,
+    image: "projectimages/medconnect.png",
+    width: 800,
+    height: 500,
+    heading: "MedConnect",
+    text: "A cross-platform app and website connecting patients with nearby pharmacies, built with React Native and React on a shared Node/Express + MongoDB backend. Patients can find pharmacies and send enquiries, while a location-based notification system matches patient coordinates to nearby pharmacies and dispatches alerts via scheduled background jobs. Web app deployed on Vercel with a custom domain; mobile app built with Expo and packaged as an APK.",
+    link: "https://medconnect.gurbajcodes.in",
+    github: "med-connect-client",
+  },
+  {
     id: 4,
     image: "projectimages/collegeportal.jpg",
     width: 800,

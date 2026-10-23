@@ -720,16 +720,27 @@ a {
 }
 
 /* ============ Responsive ============ */
+
+/* Tablet + below — hero goes single-column and centers */
 @media (max-width: 960px) {
     .hero__inner {
         grid-template-columns: 1fr;
         gap: 48px;
-        text-align: left;
+        text-align: center;
     }
 
     .hero__portrait {
-        justify-self: start;
+        justify-self: center;
         width: 220px;
+    }
+
+    .hero__actions {
+        justify-content: center;
+    }
+
+    .hero__sub {
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .work__card--wide {
@@ -742,6 +753,41 @@ a {
     }
 }
 
+/* Mobile cards + contact grid */
+@media (max-width: 860px) {
+
+    .work__card,
+    .work__card--reverse {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .work__card--reverse .work__media {
+        order: 0;
+    }
+
+    .work__body {
+        padding: 0 4px 8px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .work__links {
+        justify-content: center;
+    }
+
+    .work__desc {
+        -webkit-line-clamp: unset;
+        display: block;
+        overflow: visible;
+    }
+
+    .contact__links {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Portrait phone — full center alignment */
 @media (max-width: 640px) {
     .nav {
         top: 8px;
@@ -769,51 +815,79 @@ a {
 
     .section__head {
         margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .section__title {
+        margin-inline: auto;
     }
 
     .tech__wall {
-        gap: 10px;
+        gap: 8px;
+        justify-content: center;
     }
 
     .tech__chip {
-        height: 68px;
-        min-width: 100px;
-        padding: 0 20px;
-        border-radius: 14px;
+        height: 56px;
+        min-width: 84px;
+        padding: 0 14px;
+        border-radius: 12px;
     }
 
     .tech__chip img {
-        height: 30px;
-        max-width: 120px;
+        height: 24px;
+        max-width: 90px;
+    }
+
+    .contact .section__inner {
+        text-align: center;
+    }
+
+    .contact__sub {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .contact__links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        margin-top: 36px;
     }
 
     .contact__footer {
         margin-top: 56px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 8px;
     }
 }
 
+/* Small phone — toolbox pills shrink further */
+@media (max-width: 480px) {
+    .tech__wall {
+        gap: 6px;
+    }
+
+    .tech__chip {
+        height: 48px;
+        min-width: 72px;
+        padding: 0 12px;
+        border-radius: 10px;
+    }
+
+    .tech__chip img {
+        height: 20px;
+        max-width: 72px;
+    }
+}
+
+/* Very small — hide nav links */
 @media (max-width: 420px) {
     .nav__links {
         display: none;
-    }
-}
-
-/* ============ A11y ============ */
-@media (prefers-reduced-motion: reduce) {
-    html {
-        scroll-behavior: auto;
-    }
-
-    *,
-    *::before,
-    *::after {
-        animation-duration: 0.001ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.001ms !important;
-    }
-
-    .reveal {
-        opacity: 1;
-        transform: none;
     }
 }

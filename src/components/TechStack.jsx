@@ -28,7 +28,6 @@ const TECH = [
 
     // Tooling
     { name: "VS Code", src: "technologies/vs.png", href: "https://code.visualstudio.com/docs" },
-    { name: "Canva", src: "technologies/canva.jpg", href: "https://canva.com/" },
 ];
 
 export default function TechStack() {

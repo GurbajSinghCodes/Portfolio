@@ -34,7 +34,7 @@ export default function LazyImage({
                 height={height}
                 loading={eager ? "eager" : "lazy"}
                 decoding="async"
-                fetchpriority={eager ? "high" : "low"}
+                fetchPriority={eager ? "high" : "low"}
                 draggable={false}
                 style={{ objectFit: fit }}
                 onLoad={() => setLoaded(true)}

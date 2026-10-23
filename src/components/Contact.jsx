@@ -58,10 +58,7 @@ export default function Contact() {
                     })}
                 </Reveal>
 
-                <div className="contact__footer">
-                    <span>© {new Date().getFullYear()} Gurbaj Singh</span>
-                    <span>Built with React · Deployed with care</span>
-                </div>
+
             </div>
         </section>
     );
