@@ -39,7 +39,7 @@ export default function Hero() {
 
                 <Reveal className="hero__portrait" delay={200}>
                     <LazyImage
-                        src="Gurbaj.jpg"
+                        src="Gurbaj.jpeg"
                         alt="Portrait of Gurbaj Singh"
                         width={420}
                         height={420}
